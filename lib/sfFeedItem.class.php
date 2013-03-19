@@ -211,11 +211,11 @@ class sfFeedItem
     return $this->categories;
   }
   
-  public function setThumbnail ($thumbnail)
+  public function setThumbnail (array $thumbnail)
   {
     $this->thumbnail = $thumbnail;
   }
-  
+    
   public function getThumbnail ()
   {
     return $this->thumbnail;

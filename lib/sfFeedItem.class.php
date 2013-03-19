@@ -210,6 +210,17 @@ class sfFeedItem
   {
     return $this->categories;
   }
+  
+  public function setThumbnail ($thumbnail)
+  {
+    $this->thumbnail = $thumbnail;
+  }
+  
+  public function getThumbnail ()
+  {
+    return $this->thumbnail;
+  }
+
 
   public function setFeed ($feed)
   {

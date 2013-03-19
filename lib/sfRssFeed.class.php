@@ -293,6 +293,12 @@ class sfRssFeed extends sfFeed
           $xml[] = '      <enclosure '.$enclosure_attributes.'></enclosure>';
         }
 
+        // thumbnail
+        if ($thumbnail = $item->getThumbnail())
+        {
+          $xml[] = '      <media:thumbnail url="'.$thumbnail['url'].'"></media:thumbnail>';
+        }
+
         // categories
         if(is_array($item->getCategories()))
         {
